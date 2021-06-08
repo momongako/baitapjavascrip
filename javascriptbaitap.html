@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bai Tap Ve Nha</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        // Bai 1:
+        // Tim so lan xuat hien cua chuoi trong chuoi
+        // Tra ra total tuong ung
+        function totalSubstr(input, match) {
+            let total = 0;
+            // code start here
+
+            for (let i = 1; i < input.length; i++) {
+                if (total = (input.match).length) {
+                    total++;
+
+                }
+
+            }
+            console.log(total);
+            // code end here
+            return total;
+        }
+        // ex
+        totalSubstr("abababbce", "ab"); // Output = 3
+        totalSubstr("ababac", "aba"); // ouput = 2
+
+        // Bai 2:
+        // Kiem tra xem kieu du lieu dau vao la Array, String, Nunmber
+        // In ra kieu du lieu tuong ung
+        function checkType(input) {
+            // code start here
+            console.log(typeof input)
+
+            if (typeof input === "string") {
+                console.log(input)
+            } else {
+                console.log(input)
+            }
+
+            // code end here
+        }
+        // Ex:
+        checkType([]); // In ra: Array
+        checkType("Test"); // In ra: String
+
+
+        // Bai 3
+        // Cho 2 chuỗi A, B
+        // Kiểm tra xem chuỗi A có chứa cùng số lần xuất hiện các kí tự như chuỗi B hay không
+        function checkAnagrams(strA, strB) {
+            // code start here
+            for (let i = 0; i < strA.length; i++) {
+                if (strB.Substr === strA.Substr) {
+                    if (strA.length === strB.length) {
+                        console.log(true)
+                    } else {
+                        console.log(false)
+                    }
+                }
+
+
+
+            }
+            // code end here
+        }
+        // Ex:
+        checkAnagrams("ABC", "BCA") // true
+        checkAnagrams("12AAB", "BaA21") // true
+        checkAnagrams("12AAB", "Ba21") // false
+
+        // Bai 4
+        // Tim hieu ly do vi sao ham ben duoi tra ra ket qua undefined
+        function hurray() {
+            return {
+                Hurray: "Big Yay"
+
+            };
+        }
+        hurray(); // undefined
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
